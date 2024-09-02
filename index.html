@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CRM CRUD Rest App">
+  <meta name="author" content="Arturo Hernández">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@arturo_hdzg">
+  <meta name="twitter:creator" content="@arturo_hdzg">
+  <meta name="twitter:title" content="CRM CRUD Rest App">
+  <meta name="twitter:description" content="CRM CRUD Rest App">
+  <meta property="og:title" content="CRM CRUD Rest App">
+  <meta property="og:description" content="CRM CRUD Rest App">
+  <meta property="og:url" content="https://arturohdzg.github.io/JS-API-CRM-App/">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Image Img Searcher">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <title>CRM - JSONServer</title>
+  <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="min-h-100 bg-gray-200">
+  <div class="md:flex min-h-screen md:align-top">
+    <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
+      <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">CRM - JSONServer</h1>
+      <p class="mt-10 text-white">Administra tus Clientes con el CRM - JSONServer</p>
+      <nav class="mt-8">
+        <a href="/" class="px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400 bg-teal-700">Clientes</a>
+        <a href="nuevo-cliente.html"
+          class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400">Nuevo Cliente</a>
+      </nav>
+    </aside> <!-- sidebar -->
+    <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
+
+      <h2 class="text-3xl font-light text-center">Clientes</h2>
+
+      <div class="flex flex-col mt-10">
+        <div class="py-2 overflow-x-auto">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full" aria-describedby="tableDescription">
+
+              <thead class="bg-gray-100 ">
+                <tr>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200
+                    text-left text-xs leading-4 font-medium
+                    text-gray-600 uppercase tracking-wider">
+                    Nombre Cliente
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200
+                    text-left text-xs leading-4 font-medium
+                    text-gray-600 uppercase tracking-wider">
+                    Teléfono
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200
+                    text-left text-xs leading-4 font-medium
+                    text-gray-600 uppercase tracking-wider">
+                    Empresa
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200
+                    text-left text-xs leading-4 font-medium
+                    text-gray-600 uppercase tracking-wider">
+                    Acciones
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="listado-clientes" class="bg-white"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p class="copyright">App CRM CRUD Rest <span id="currentYear"></span>&copy;</p>
+        <p class="copyright">Designed by Arturo Hernández Garza</p>
+      </footer>
+    </main>
+  </div>
+  <script src="js/app.js" type="module"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
