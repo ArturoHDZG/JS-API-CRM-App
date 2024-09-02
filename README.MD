@@ -29,7 +29,7 @@ This project is a learning exercise aimed at creating an efficient and user-frie
 
 ## Live Demo
 
-Check out the live demo of the Restaurant App [here](https://arturohdzg.github.io/JS-API-CRM-App/).
+Check out the live demo of the CRM Rest App [here](https://arturohdzg.github.io/JS-API-CRM-App/).
 
 ## Additional Info
 
