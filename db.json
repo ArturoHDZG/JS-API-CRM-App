@@ -1,11 +1,25 @@
 {
   "clientes": [
     {
+      "id": "26",
       "nombre": "Juan NUEVO!",
       "email": "correo2@correo.com",
       "telefono": "12",
-      "empresa": "12212",
-      "id": 26
+      "empresa": "12212"
+    },
+    {
+      "id": "8c73",
+      "nombre": "Roro",
+      "email": "correo@correo.com",
+      "telefono": "2434314532",
+      "empresa": "Empresa Feliz"
+    },
+    {
+      "id": "a4b2",
+      "nombre": "T-1000",
+      "email": "hastalavista@skynet.com",
+      "telefono": "9340934032",
+      "empresa": "Skynet"
     }
   ]
 }
