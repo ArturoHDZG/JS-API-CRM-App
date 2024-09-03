@@ -1,13 +1,6 @@
 {
   "clientes": [
     {
-      "id": "26",
-      "nombre": "Juan NUEVO!",
-      "email": "correo2@correo.com",
-      "telefono": "12",
-      "empresa": "12212"
-    },
-    {
       "id": "8c73",
       "nombre": "Roro",
       "email": "correo@correo.com",
@@ -20,6 +13,13 @@
       "email": "hastalavista@skynet.com",
       "telefono": "9340934032",
       "empresa": "Skynet"
+    },
+    {
+      "id": "cf84",
+      "nombre": "John Wayne",
+      "email": "johnwayne@western.com",
+      "telefono": "000000000",
+      "empresa": "Sheriff"
     }
   ]
 }
