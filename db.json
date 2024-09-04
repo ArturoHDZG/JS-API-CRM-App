@@ -2,7 +2,7 @@
   "clientes": [
     {
       "id": "8c73",
-      "nombre": "Roro",
+      "nombre": "Pablo Prueba",
       "email": "correo@correo.com",
       "telefono": "2434314532",
       "empresa": "Empresa Feliz"
@@ -18,7 +18,7 @@
       "id": "cf84",
       "nombre": "John Wayne",
       "email": "johnwayne@western.com",
-      "telefono": "000000000",
+      "telefono": "0035708994",
       "empresa": "Sheriff"
     }
   ]

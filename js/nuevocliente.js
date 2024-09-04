@@ -1,5 +1,5 @@
 import { nuevoCliente } from './API.js';
-import { mostrarAlerta } from './funciones.js';
+import { mostrarAlerta, validar } from './funciones.js';
 
 (function () {
   //* Selectores
@@ -29,9 +29,5 @@ import { mostrarAlerta } from './funciones.js';
     } else {
       nuevoCliente(cliente);
     }
-  }
-
-  function validar(obj) {
-    return !Object.values(obj).every(input => input !== '');
   }
 })();

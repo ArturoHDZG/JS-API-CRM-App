@@ -39,3 +39,30 @@ export const eliminarCliente = async id => {
     mostrarAlerta(error);
   }
 };
+
+// Obtener cliente por ID
+export const obtenerClientePorId = async id => {
+  try {
+    const respuesta = await fetch(`${URL}/${id}`);
+    return await respuesta.json();
+  } catch (error) {
+    mostrarAlerta(error);
+    return null;
+  }
+};
+
+// Actualizar cliente por ID
+export const editarCliente = async cliente => {
+  try {
+    await fetch(`${URL}/${cliente.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(cliente)
+    });
+    window.location.href = 'index.html';
+  } catch (error) {
+    mostrarAlerta(error);
+  }
+};
